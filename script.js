@@ -12,4 +12,6 @@ ages.push(16);
 console.log(ages);
 //I used the push method to add age 16 to the array
 console.log((ages[0] -= ages.length - 1));
-//I'm sure why is goes in (()), when I saved the first time it added them so I added them again to the second run
+//I'm not sure why is goes in (()), when I saved the first time it added them so I added them again to the second run
+for (let i = 0; i < ages.length; i++) i++;
+console.log(ages / [i]);
