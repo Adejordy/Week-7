@@ -74,32 +74,50 @@ function fullName(firstName, lastName) {
 }
 fullName("Alyssa", "Dejordy");
 //I created the function for full name and added the two parameters first and last name, from there I used template literals for the information in the console log and to return with out a space. I added my name to be returned
-//FIXME 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
-let numbers = (100, 200, 300, 400, 500);
+//9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+let numbers1 = (100, 200, 300, 400, 500);
 function numbersArray(array) {
   let total = 0;
-  for (let i = 0; i < numbers.lenght; i++) {
-    total += numbers[i];
+  for (let i = 0; i < array.lenght; i++) {
+    total += array[i];
   }
   if (total > 100) {
-    console.log("Question 9: ", true);
-    return true;
-  } else {
-    console.log("Question 9: ", false);
+    console.log("Question 9: Total is over 100\n\n ", false);
     return false;
+  } else {
+    console.log("Question 9: Total is over 100\n\n ", true);
+    return true;
   }
 }
-console.log("Question 9: ", total);
-
-//TODO 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
-// function arrayOfNumbers(20, 50, 70, 90){
-//   for (let i = 0, i < arrayOfNumbers.length; i++)
+numbersArray(numbers1);
+//I created an array and then looped through the array to add the total of elements, if the total is greater than 100 it should show true.
+//10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
+let numbers2 = (20, 50, 70, 90);
+function arrayOfNumbers(array) {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
+    total += array[i];
+  }
+}
+arrayOfNumbers(total);
+console.log("Question 10: Average\n\n", total / arrayOfNumbers.length);
+//I'm not sure why my console log is showing 38.5 from question 2.
+//11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+// let numbers3 = [50, 60, 70, 80];
+// let numbers4 = [10, 20, 30, 40, 50];
+// function twoArrays(array1, array2) {
+//   let total1 = 0;
+//   let total2 = 0;
+//   for (let i = 0; i < array.lenght; i++);
 // }
-//TODO 11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
-//TODO 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
-// function willBuyDrink(isHotOutside, moneyInPocket){
-//   if (isHotOutside > 90);
-//   return true;
-// }else
-
+// twoArrays(numbers3, numbers4);
+//12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+function willBuyDrink(isHotOutside, moneyInPocket) {
+  let buyDrink = isHotOutside === true && moneyInPocket > 10.5;
+  console.log("Question 12: Buy and Drink\n\n", buyDrink);
+  return buyDrink;
+}
+willBuyDrink(true, 11);
+willBuyDrink(true, 6);
+//I created a function with the two parameters, is hotOutSide and moneyInPocket, then created a variable to determin if its hotOutSide is true and moneyInPocket is greater than 10.5 the retun is true.
 //TODO 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created
