@@ -103,14 +103,28 @@ arrayOfNumbers(total);
 console.log("Question 10: Average\n\n", total / arrayOfNumbers.length);
 //I'm not sure why my console log is showing 38.5 from question 2.
 //11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
-// let numbers3 = [50, 60, 70, 80];
-// let numbers4 = [10, 20, 30, 40, 50];
-// function twoArrays(array1, array2) {
-//   let total1 = 0;
-//   let total2 = 0;
-//   for (let i = 0; i < array.lenght; i++);
-// }
-// twoArrays(numbers3, numbers4);
+let first = [50, 60, 70, 80];
+let second = [10, 20, 30, 40, 50];
+function twoArrays(array1, array2) {
+  sum = 0;
+  for (let i = 0; i < array1.length; i++) {
+    sum += array1[i];
+    let average1 = sum / array1.length;
+  }
+  sum2 = 0;
+  {
+    for (let i = 0; i < array2.length; i++) sum2 += array2[i];
+    let average2 = sum2 / array2.length;
+  }
+  if (average1 > average2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+twoArrays(first, second);
+console.log("Question 11: Is array1 greater and array2\n\n", twoArrays);
+//I tried to created the average for the two arrays and then create an if statement to create a true of false statment but I wasnt able to get it to console log correctly. Its stating my average1 is undefined.
 //12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 function willBuyDrink(isHotOutside, moneyInPocket) {
   let buyDrink = isHotOutside === true && moneyInPocket > 10.5;
@@ -120,4 +134,12 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 willBuyDrink(true, 11);
 willBuyDrink(true, 6);
 //I created a function with the two parameters, is hotOutSide and moneyInPocket, then created a variable to determin if its hotOutSide is true and moneyInPocket is greater than 10.5 the retun is true.
-//TODO 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created
+//13. Create a function of your own that solves a problem. In comments, write what the function does and why you created
+function dayOfWeek(weekDay, weekEnd) {
+  let wearJeans = weekDay === true && weekEnd === true;
+  console.log("Question 13: Can I wear Jeans\n\n", wearJeans);
+  return wearJeans;
+}
+dayOfWeek(true, true);
+dayOfWeek(true, false);
+//I created a function to determine if I can wear jeans based on if its a weekday or weekend. I tried to add the days of the week but I was having trouble.
